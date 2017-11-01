@@ -1,15 +1,6 @@
 # Facebook Personal Chatbot
 ### Download: https://nodejs.org
 ### login
-__Email & Password__
-
-```js
-const login = require("facebook-chat-api");
-
-login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
-    if(err) return console.error(err);
-});
-```
 
 __Email & Password then save appState to file__
 
