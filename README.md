@@ -2,7 +2,7 @@
 ### Download: https://nodejs.org
 ### login
 
-__Email & Password then save appState to file__
+__Tạo Cookie từ Email và Password__
 
 ```js
 const fs = require("fs");
@@ -15,7 +15,7 @@ login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
 });
 ```
 
-__AppState loaded from file__
+__Đăng nhập bằng Cookie__
 
 ```js
 const fs = require("fs");
