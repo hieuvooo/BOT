@@ -12,7 +12,7 @@ login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
 		if(message.body==="/Getid"||message.body==="/getid"||message.body==="/get id"||message.body==="/Get id"||message.body==="/Get ID") {
 			console.log("FB.com/" + message.threadID + ' - Message: '+message.body);
 			api.sendMessage(message.senderID, message.threadID);
-            api.sendMessage("Your ID: ", message.threadID); 			
+                        api.sendMessage("Your ID: ", message.threadID); 			
 		} 
 		//Ví dụ nếu mình set message.body = /Jarvis thì bot sẽ print api.sendMessage = Send bobs n vegena... 
 		else if(message.body === "/Jarvis"||message.body==="/jarvis") { 
